@@ -25,10 +25,10 @@ file_put_contents($file, $current);
 $reply =  sendMessage();
 		
 // send reply
-//$sendto =API_URL."sendmessage?chat_id=".$chatID."&text=".$reply;
-//file_get_contents($sendto);
-$sendto =API_URL."sendmessage?chat_id=".$chatID."&text=".$update["message"]["text"];
+$sendto =API_URL."sendmessage?chat_id=".$chatID."&text=".$reply;
 file_get_contents($sendto);
+//$sendto =API_URL."sendmessage?chat_id=".$chatID."&text=".$update["message"]["text"];
+//file_get_contents($sendto);
 
 function sendMessage(){
 $message = "Ci";
